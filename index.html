@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine and Ride</title>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.10.5/dist/cdn.min.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link href="dist/output.css" rel="stylesheet">
+</head>
+<body>
+    <div class="tw-bg-white">
+        <header class="tw-fixed tw-inset-x-0 tw-top-0 tw-z-50 tw-p-2">
+            <nav class="tw-flex tw-items-center tw-justify-between tw-p-6 lg:tw-px-8" aria-label="Global">
+                <div class="tw-flex lg:tw-flex-1">
+                    <a href="#" class="-tw-m-1.5 tw-p-1.5">
+                        <span class="tw-sr-only">Wine and Ride</span>
+                        <img class="tw-h-8 tw-w-auto" src="imgs/logowine.png" alt="">
+                    </a>
+                </div>
+                <div class="tw-flex lg:tw-hidden">
+                    <button type="button"
+                        class="-tw-m-2.5 tw-inline-flex tw-items-center tw-justify-center tw-rounded-md tw-p-2.5 tw-text-gray-700">
+                        <span class="tw-sr-only">Abrir menú</span>
+                        <svg class="tw-size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true" data-slot="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="tw-hidden lg:tw-flex lg:tw-gap-x-12">
+                    <a href="#" class="tw-text-sm/6 tw-font-semibold tw-text-gray-900">Home</a>
+                    <a href="#" class="tw-text-sm/6 tw-font-semibold tw-text-gray-900">Actividades</a>
+                    <a href="#" class="tw-text-sm/6 tw-font-semibold tw-text-gray-900">Nosotros</a>
+                    <a href="#" class="tw-text-sm/6 tw-font-semibold tw-text-gray-900">Contacto</a>
+                </div>
+            </nav>
+
+            <div class="lg:tw-hidden" role="dialog" aria-modal="true">
+                <div class="tw-fixed tw-inset-0 tw-z-50"></div>
+                <div
+                    class="tw-fixed tw-inset-y-0 tw-right-0 tw-z-50 tw-w-full tw-overflow-y-auto tw-bg-white tw-px-6 tw-py-6 sm:tw-max-w-sm sm:tw-ring-1 sm:tw-ring-gray-900/10">
+                    <div class="tw-flex tw-items-center tw-justify-between">
+                        <a href="#" class="-tw-m-1.5 tw-p-1.5">
+                            <span class="tw-sr-only">Wine and Ride</span>
+                            <img class="tw-h-8 tw-w-auto" src="imgs/logowine.png" alt="">
+                        </a>
+                        <button type="button" class="-tw-m-2.5 tw-rounded-md tw-p-2.5 tw-text-gray-700">
+                            <span class="tw-sr-only">Cerrar menú</span>
+                            <svg class="tw-size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                aria-hidden="true" data-slot="icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="tw-mt-6 tw-flow-root">
+                        <div class="-tw-my-6 tw-divide-y tw-divide-gray-500/10">
+                            <div class="tw-space-y-2 tw-py-6">
+                                <a href="#"
+                                    class="-tw-mx-3 tw-block tw-rounded-lg tw-px-3 tw-py-2 tw-text-base/7 tw-font-semibold tw-text-gray-900 hover:tw-bg-gray-50">Home</a>
+                                <a href="#"
+                                    class="-tw-mx-3 tw-block tw-rounded-lg tw-px-3 tw-py-2 tw-text-base/7 tw-font-semibold tw-text-gray-900 hover:tw-bg-gray-50">Actividades</a>
+                                <a href="#"
+                                    class="-tw-mx-3 tw-block tw-rounded-lg tw-px-3 tw-py-2 tw-text-base/7 tw-font-semibold tw-text-gray-900 hover:tw-bg-gray-50">Nosotros</a>
+                                <a href="#"
+                                    class="-tw-mx-3 tw-block tw-rounded-lg tw-px-3 tw-py-2 tw-text-base/7 tw-font-semibold tw-text-gray-900 hover:tw-bg-gray-50">Contacto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="tw-relative tw-isolate tw-px-6 tw-pt-14 tw-lg:tw-px-8">
+            <div class="tw-absolute tw-inset-x-0 -tw-top-40 -tw-z-10 tw-transform-gpu tw-overflow-hidden tw-blur-3xl tw-sm:-tw-top-80"
+                aria-hidden="true"></div>
+        </div>
+
+
+
+<div class="tw-relative tw-h-screen">
+    <img src="imgs/la-cordillera-de-los.jpg" class="tw-absolute tw-inset-0 tw-h-full tw-w-full tw-object-cover" alt="Background Image">
+
+    <!-- Contenedor del texto -->
+    <div class="tw-relative tw-z-10 tw-text-left tw-mx-auto tw-max-w-2xl tw-p-3 sm:tw-p-12 lg:tw-p-16">
+        <h1 class="tw-text-5xl tw-font-semibold tw-tracking-tight tw-text-gray-100 sm:tw-text-7xl tw-mb-4">
+            La ruta del vino te espera.
+        </h1>
+        <div class="tw-relative tw-inline-block tw-rounded-full tw-px-4 tw-py-2 tw-text-sm tw-text-gray-200 tw-ring-1 tw-ring-gray-900/10 hover:tw-ring-gray-900/20">
+            <span>Pedaleá. Brindá. Descubrí. Viví la ruta del vino con nosotros.</span>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
