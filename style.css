@@ -1,3 +1,10 @@
+@media (max-width: 768px) {
+    #home {
+        background-position: 17% center !important; /* Ajusta 30% según lo que quieras */
+    }
+}
+
+
 footer p {
         font-size: 12px; 
     }
@@ -58,3 +65,20 @@ html {
 .dynamic-button i {
     transition: transform 0.3s ease;
 }
+
+.actividad-img {
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  .actividad-img:hover {
+    transform: scale(1.03);
+  }
+  @media (max-width: 768px) {
+    #actividades .row {
+      text-align: center;
+    }
+    #actividades img {
+      margin-top: 15px;
+    }
+  }

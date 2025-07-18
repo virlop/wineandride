@@ -1,161 +1,293 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wine and Ride</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Header -->
-    <header class="bg-light fixed-top shadow p-1"  style="border-bottom: 3px solid #ae4f4f;">
-        <nav class="navbar navbar-expand-lg navbar-light container p-1">
-            <a class="navbar-brand" href="#home">
-                <img src="imgs/logowine.png" alt="Wine and Ride" height="50">
-
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav m-auto">
-                    <li class="nav-item p-1 m-1">
-                        <a class="nav-link active" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item p-1 m-1">
-                        <a class="nav-link" href="#actividades">Actividades</a>
-                    </li>
-                    <li class="nav-item p-1 m-1">
-                        <a class="nav-link" href="#nosotros">Nosotros</a>
-                    </li>
-                    <li class="nav-item p-1 m-1">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
-                    <a href="#contacto" class="btn button btn-danger btn-sm m-auto p-2 m-2 ms-2 dynamic-button" style="background-color: #ae4f4f; border: none;">
-                        Hacé tu reserva
-                    </a>
-                </ul>
-            </div>
-        </nav>
+    <header
+      class="bg-light fixed-top shadow p-1"
+      style="border-bottom: 3px solid #9d2527"
+    >
+      <nav class="navbar navbar-expand-lg navbar-light container p-1">
+        <a class="navbar-brand" href="#home">
+          <img src="imgs/logowine.png" alt="Wine and Ride" height="50" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item p-1 m-1">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item p-1 m-1">
+              <a class="nav-link" href="#actividades">Actividades</a>
+            </li>
+            <li class="nav-item p-1 m-1">
+              <a class="nav-link" href="#nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item p-1 m-1">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+          <!-- Botón fuera del UL -->
+          <a
+            href="#contacto"
+            class="btn btn-danger ms-lg-3 mt-2 mt-lg-0"
+            style="
+              background-color: #9d2527;
+              border: none;
+              border-radius: 50px;
+              padding: 12px 24px;
+            "
+          >
+            Hacé tu reserva
+          </a>
+        </div>
+      </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="d-flex align-items-start text-white position-relative" style="height: 100vh; padding-top: 80px; background: url('imgs/la-cordillera-de-los.jpg') no-repeat center center/cover; background-attachment: fixed;">
-        <!-- Capa oscura -->
-        <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)); z-index: 1;"></div>
-    
-        <!-- Contenido -->
-        <div class="container position-relative ms-3 mt-3" style="z-index: 2;">
-            <div class="row">
-                <div class="col-12 col-md-6 p-3 pt-4">
-                    <h1 class="display-2 fw-bold oooh-baby-regular text-white fade-in" style="line-height: 1.2;">Viví la experiencia de la ruta del vino</h1>
-                    <p class="mt-2 fs-6 fw-lighter text-white fade-in" style="animation-delay: 0.3s;">Pedaleá. Brindá. Descubrí.</p>
-                    <a href="#actividades" class="fs-6 fw-light btn btn-danger btn-sm align-items-center dynamic-button" style="background-color: #ae4f4f; border: none;">
-                        Explorá nuestras experiencias
-                        <i class="fas fa-arrow-right ms-2"></i>
-                    </a>   
-                </div>
+    <section
+      id="home"
+      class="d-flex align-items-end text-white position-relative"
+      style="
+        height: 100vh;
+        background: url(&quot;imgs/index-foto-principal.jpeg&quot;) no-repeat
+          center center/cover;
+        background-attachment: fixed;
+      "
+    >
+      <!-- Capa oscura -->
+      <div
+        style="
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.7)
+          );
+          z-index: 1;
+        "
+      ></div>
+
+      <!-- Contenido -->
+      <div
+        class="container position-relative"
+        style="
+          z-index: 2;
+          padding-bottom: 50px;
+          padding-left: 10px;
+          padding-right: 10px;
+        "
+      >
+        <div class="row">
+          <div class="">
+            <h1
+              class="display-2 fw-bold oooh-baby-regular text-white fade-in text-center"
+              style="line-height: 1.2"
+            >
+              Viví la experiencia de la ruta del vino
+            </h1>
+            <p
+              class="mt-2 fs-5 fw-light text-white fade-in text-center"
+              style="animation-delay: 0.3s"
+            >
+              Pedaleá. Brindá. Descubrí.
+            </p>
+            <div class="text-center">
+              <a
+                href="#actividades"
+                class="btn btn-danger btn-lg dynamic-button"
+                style="
+                  background-color: #9d2527;
+                  border: none;
+                  border-radius: 50px;
+                  padding: 12px 24px;
+                "
+              >
+                Explorá nuestras experiencias
+                <i class="fas fa-arrow-right ms-2"></i>
+              </a>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    
-<!-- ACTIVIDADES Section -->
-<section id="actividades">
-    <div id="carouselActividades" class="carousel slide" data-bs-ride="carousel" style="height: 100vh;">
-        <div class="carousel-inner" style="height: 100%;">
-            <!-- Imagen 1 -->
-            <div class="carousel-item active" style="height: 100%;">
-                <img src="imgs/carusel/degustacion.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Actividad 1">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="text-white bg-dark bg-opacity-50 px-3 py-1 rounded">Probá los mejores vinos de Mendoza en bodegas seleccionadas.</h5>
-                    <p class="text-white bg-dark bg-opacity-50 px-3 py-1 rounded">
-                        Disfrutá de degustaciones exclusivas en bodegas y almazaras seleccionadas. Desde vinos premiados hasta aceites autóctonos, cada visita es una celebración de los sabores más auténticos.
-                    </p>
-                </div>
-            </div>
-            <!-- Imagen 2 -->
-            <div class="carousel-item" style="height: 100%;">
-                <img src="imgs/carusel/parte-de-nuestra-flota.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Actividad 2">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="text-white bg-dark bg-opacity-50 px-3 py-1 rounded">Degustación de Vinos</h5>
-                    <p class="text-white bg-dark bg-opacity-50 px-3 py-1 rounded">Probá los mejores vinos de Mendoza en bodegas seleccionadas.</p>
-                </div>
-            </div>
-            <!-- Imagen 3 -->
-            <div class="carousel-item" style="height: 100%;">
-                <img src="imgs/carusel/todoincluido.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Actividad 3">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="text-white bg-dark bg-opacity-50 px-3 py-1 rounded">Aventuras en Bicicleta</h5>
-                    <p class="text-white bg-dark bg-opacity-50 px-3 py-1 rounded">Recorré paisajes increíbles en una experiencia inolvidable.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Controles del Carrusel -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselActividades" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselActividades" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+    <!-- ACTIVIDADES Section -->
+    <!-- Sección ACTIVIDADES -->
+<section id="actividades" class="container py-5">
+    <!-- Título principal -->
+    <div class="text-center mb-5">
+      <h1 class="fw-bold" style="color:#9D2527;">Nuestras Actividades</h1>
+      <p class="text-muted fs-4 oooh-baby-regular fw-bold ">Descubrí todo lo que tenemos para vos</p>
     </div>
-</section>
+  
+    <!-- Bloque 1 -->
+    <div class="row align-items-center mb-5 bg-light rounded shadow-sm p-4" data-aos="fade-up">
+      <div class="col-12 col-md-6">
+        <h2 class="fw-bold mb-3">
+          <i class="fas fa-wine-glass-alt text-danger me-2"></i>Probá los mejores vinos
+        </h2>
+        <p>
+          Descubrí los sabores más auténticos de Mendoza en la emblemática Ruta del Vino y el Olivo,
+          en Maipú. Viví una experiencia única degustando vinos de excelencia, aceites artesanales y
+          la mejor gastronomía regional, en cada visita guiada pensada para sorprenderte.
+        </p>
+        <a href="#contacto" class="btn btn-danger mt-3"
+          style="background:#9D2527; border:none; border-radius:50px; padding:12px 24px;">
+          Reservá tu experiencia <i class="fas fa-arrow-right ms-2"></i>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 mt-3 mt-md-0">
+        <img src="imgs/carusel/degustacion2.jpg" class="img-fluid actividad-img" alt="Degustación de vinos">
+      </div>
+    </div>
+  
+    <!-- Bloque 2 (orden invertido en desktop) -->
+    <div class="row align-items-center mb-5 rounded shadow-sm p-4" style="background:#f8f8f8;" data-aos="fade-up">
+      <div class="col-12 col-md-6 order-md-2">
+        <h2 class="fw-bold mb-3">
+          <i class="fas fa-bicycle text-danger me-2"></i>Disfrutá sin preocupaciones
+        </h2>
+        <p>
+          En Wine and Ride nos aseguramos de que cada detalle de tu experiencia sea perfecto.
+          Por eso contamos con bicicletas de alta calidad, cuidadosamente mantenidas, y con todo
+          el equipo de seguridad necesario para que recorras las rutas del vino con total tranquilidad.
+          Además, nuestro equipo está siempre disponible para asistirte y brindarte recomendaciones,
+          asegurando que tu recorrido sea cómodo, seguro y, sobre todo, inolvidable.
+        </p>
+        <a href="#contacto" class="btn btn-danger mt-3"
+          style="background:#9D2527; border:none; border-radius:50px; padding:12px 24px;">
+          Reservá tu experiencia <i class="fas fa-arrow-right ms-2"></i>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 order-md-1 mt-3 mt-md-0">
+        <img src="imgs/carusel/preocupaciones.jpeg" class="img-fluid actividad-img" alt="Nuestra flota">
+      </div>
+    </div>
+  
+    <!-- Bloque 3 -->
+    <div class="row align-items-center rounded shadow-sm p-4 bg-light" data-aos="fade-up">
+      <div class="col-12 col-md-6">
+        <h2 class="fw-bold mb-3">
+          <i class="fas fa-mountain text-danger me-2"></i>Viví aventuras pedaleando
+        </h2>
+        <p>
+          Recorré paisajes imponentes y viví una experiencia única en las rutas del vino de Mendoza.
+          Pedaleá entre viñedos, disfrutá de la tranquilidad de la naturaleza y maravillate con las montañas como
+          telón de fondo. Cada kilómetro es una invitación a descubrir sabores, aromas y la cultura vitivinícola que
+          hace de Mendoza un destino incomparable.
+        </p>
+        <a href="#contacto" class="btn btn-danger mt-3"
+          style="background:#9D2527; border:none; border-radius:50px; padding:12px 24px;">
+          Reservá tu experiencia <i class="fas fa-arrow-right ms-2"></i>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 mt-3 mt-md-0">
+        <img src="imgs/carusel/todoincluido.jpg" class="img-fluid actividad-img" alt="Aventura en bicicleta">
+      </div>
+    </div>
+  </section>
+  
+  <!-- AOS Script -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+   
 
-
-    
     <!-- NOSOTROS Section -->
     <section id="nosotros" class="pt-5">
-        <h2>Nosotros</h2>
-        <p>Texto sobre nosotros...</p>
+      <h2>Nosotros</h2>
+      <p>Texto sobre nosotros...</p>
     </section>
-    
+
     <!-- CONTACTO Section -->
     <section id="contacto" class="pt-5">
-        <h2>Contacto</h2>
-        <p>Texto de contacto...</p>
+      <h2>Contacto</h2>
+      <p>Texto de contacto...</p>
     </section>
-    
-    
+
     <!-- Footer -->
-    <footer class="bg-light py-4 text-center" style="background-color: #F5F3F2">
-        <div class="container">
-            <p class="mb-0 fs-10 fw-light">Wine and Ride ©</p>
-            <p class="mb-0 fs-10 fw-light" >Ozamis 611 Norte, Maipú, Mendoza, Argentina</p>
-            <p class="mb-0 fs-10 fw-light">Tel: +54 261 588 0495</p>
+    <footer class="bg-light py-4 text-center" style="background-color: #f5f3f2">
+      <div class="container">
+        <p class="mb-0 fs-10 fw-light">Wine and Ride ©</p>
+        <p class="mb-0 fs-10 fw-light">
+          Ozamis 611 Norte, Maipú, Mendoza, Argentina
+        </p>
+        <p class="mb-0 fs-10 fw-light">Tel: +54 261 588 0495</p>
+      </div>
+      <div class="container p-1">
+        <div class="d-flex justify-content-center align-items-center">
+          <!-- Facebook -->
+          <a
+            href="https://www.facebook.com/wineandride/"
+            class="text-dark me-3 d-flex align-items-center text-decoration-none"
+          >
+            <i class="fab fa-facebook fa-lg"></i>
+          </a>
+          <!-- Instagram -->
+          <a
+            href="https://www.instagram.com/wineandride/"
+            class="text-dark me-3 d-flex align-items-center text-decoration-none"
+          >
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+          <!-- TripAdvisor -->
+          <a
+            href="https://www.tripadvisor.com.ar/Attraction_Review-g1026496-d10076036-Reviews-Wine_and_Ride-Maipu_Province_of_Mendoza_Cuyo.html"
+            class="text-dark d-flex align-items-center"
+          >
+            <img
+              src="imgs/tripad.png"
+              alt="TripAdvisor"
+              width="24"
+              height="24"
+            />
+          </a>
         </div>
-        <div class="container p-1">
-            <div class="d-flex justify-content-center align-items-center">
-                <!-- Facebook -->
-                <a href="https://www.facebook.com/wineandride/" class="text-dark me-3 d-flex align-items-center text-decoration-none">
-                    <i class="fab fa-facebook fa-lg"></i>
-                </a>
-                <!-- Instagram -->
-                <a href="https://www.instagram.com/wineandride/" class="text-dark me-3 d-flex align-items-center text-decoration-none">
-                    <i class="fab fa-instagram fa-lg"></i>
-                </a>
-                <!-- TripAdvisor -->
-                <a href="https://www.tripadvisor.com.ar/Attraction_Review-g1026496-d10076036-Reviews-Wine_and_Ride-Maipu_Province_of_Mendoza_Cuyo.html" class="text-dark d-flex align-items-center">
-                    <img src="imgs/tripad.png" alt="TripAdvisor" width="24" height="24">
-                </a>
-            </div>
-        </div>
-        
+      </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
-
-
