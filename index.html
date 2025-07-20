@@ -233,17 +233,198 @@
     });
   </script>
    
-
     <!-- NOSOTROS Section -->
-    <section id="nosotros" class="pt-5">
-      <h2>Nosotros</h2>
-      <p>Texto sobre nosotros...</p>
-    </section>
+<!-- NOSOTROS Section -->
+<section id="nosotros" class="container">
+  <!-- Título principal -->
+  <div class="text-center mb-5">
+    <h1 class="fw-bold" style="color:#9D2527;">Nosotros</h1>
+    <p class="text-muted fs-4 oooh-baby-regular fw-bold">¿Quiénes somos?</p>
+  </div>
+
+  <div class="row align-items-center rounded shadow-sm p-4 bg-light" data-aos="fade-up">
+    <!-- Columna texto -->
+    <div class="col-12 col-md-6">
+      <h2 class="fw-bold mb-3">
+      </h2>
+      <p class="fw-bold fs-5 mb-2">Nuestra misión</p>
+      <p>
+        En <strong>Wine and Ride</strong> nos apasiona mostrarte la esencia de los
+        <strong>caminos del vino y del olivo</strong> en Maipú y Luján.
+        Queremos que disfrutes una experiencia <strong>única, ecológica y saludable</strong>,
+        donde la naturaleza, la cultura y la aventura se encuentran.
+      </p>
+
+      <!-- Lista de ventajas -->
+      <div class="mt-3">
+        <p class="fw-bold fs-5 mb-2">¿Por qué elegirnos?</p>
+        <ul class="list-unstyled">
+          <li><i class="fas fa-check-circle text-danger me-2"></i>Rutas exclusivas entre viñedos</li>
+          <li><i class="fas fa-check-circle text-danger me-2"></i>Bicicletas seguras y cómodas</li>
+          <li><i class="fas fa-check-circle text-danger me-2"></i>Experiencias personalizadas</li>
+          <li><i class="fas fa-check-circle text-danger me-2"></i>Compromiso con el turismo sostenible</li>
+        </ul>
+      </div>
+
+      <!-- Horarios -->
+      <div class="mt-4">
+        <p class="fw-bold fs-5 mb-2">Nuestros horarios de atención:</p>
+        <ul class="list-unstyled">
+          <li><i class="fas fa-clock text-danger me-2"></i>Lunes a Viernes: 9:00 - 18:00</li>
+          <li><i class="fas fa-clock text-danger me-2"></i>Sábados y Domingos: 10:00 - 16:00</li>
+        </ul>
+      </div>
+
+      <!-- Botón -->
+      <a href="#contacto" class="btn btn-danger mt-4"
+        style="background:#9D2527; border:none; border-radius:50px; padding:12px 24px;">
+        Contactanos <i class="fas fa-arrow-right ms-2"></i>
+      </a>
+    </div>
+
+    <!-- Columna imágenes -->
+    <div class="col-12 col-md-6 mt-4 mt-md-0">
+      <div id="nosotrosCarousel" class="carousel slide rounded shadow-sm" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Imagen 1 -->
+          <div class="carousel-item active">
+            <img src="imgs/carusel/car-nosotros1.jpg" class="d-block w-100 rounded" alt="Viñedos Mendoza">
+          </div>
+          <!-- Imagen 2 -->
+          
+          <!-- Imagen 3 -->
+          <div class="carousel-item">
+            <img src="imgs/carusel/car-nosotros2.jpg" class="d-block w-100 rounded" alt="Ruta del vino">
+          </div>
+          <!-- Imagen 4 -->
+          <div class="carousel-item">
+            <img src="imgs/carusel/car-nosotros 3.jpg" class="d-block w-100 rounded" alt="Paisajes de Mendoza">
+        </div>
+    
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#nosotrosCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#nosotrosCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+    
+        <!-- Indicadores -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#nosotrosCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
+          <button type="button" data-bs-target="#nosotrosCarousel" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+          <button type="button" data-bs-target="#nosotrosCarousel" data-bs-slide-to="2" aria-label="Imagen 3"></button>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Mapa debajo para ubicación -->
+  <div class="mt-5" data-aos="fade-up">
+    <p class="fw-bold fs-5 mb-3"><i class="fas fa-map-marker-alt text-danger me-2"></i>¿Dónde estamos?</p>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.061469295052!2d-68.7856969251428!3d-32.96041567363196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0cf453571a45%3A0xe314fa45bcd747f5!2sWine%20and%20Ride!5e0!3m2!1ses!2sar!4v1721234567890" 
+      width="100%" height="350" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+<!-- AOS Script -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
 
     <!-- CONTACTO Section -->
     <section id="contacto" class="pt-5">
-      <h2>Contacto</h2>
-      <p>Texto de contacto...</p>
+<!-- CONTACTO Section -->
+<section id="contacto" class="container py-5">
+  <!-- Título -->
+  <div class="text-center mb-5">
+    <h1 class="fw-bold" style="color:#9D2527;">Contacto</h1>
+    <p class="text-muted fs-4 oooh-baby-regular fw-bold">Estamos para ayudarte</p>
+  </div>
+
+  <div class="row g-4">
+    <!-- Columna Sucursales -->
+    <div class="col-12 col-md-6 bg-light rounded shadow-sm p-4" data-aos="fade-right">
+      <h3 class="fw-bold mb-4">
+        <i class="fas fa-map-marker-alt text-danger me-2"></i>Sucursales
+      </h3>
+
+      <!-- Base 1 -->
+      <p class="fw-bold mb-1">Base 1:</p>
+      <p>OZAMIS 611 Norte, Gutierrez, Maipú, Mendoza.</p>
+      <p><i class="fas fa-clock text-danger me-2"></i>Horario: 10:00 a 19:00</p>
+      <a href="https://maps.google.com?q=OZAMIS+611+Norte,+Gutierrez,+Maipú,+Mendoza" 
+         target="_blank" class="text-danger fw-bold">Ver Mapa ></a>
+
+      <hr>
+
+      <!-- Base 2 -->
+      <p class="fw-bold mb-1">Base 2:</p>
+      <p>Bodega Vinorum, Luján de Cuyo, Mendoza.</p>
+      <p><i class="fas fa-clock text-danger me-2"></i>Horario: 10:00 a 17:00</p>
+      <a href="https://maps.google.com?q=Bodega+Vinorum,+Luján+de+Cuyo,+Mendoza" 
+         target="_blank" class="text-danger fw-bold">Ver Mapa ></a>
+    </div>
+
+    <!-- Columna Teléfonos -->
+    <div class="col-12 col-md-6 bg-light rounded shadow-sm p-4" data-aos="fade-left">
+      <h3 class="fw-bold mb-4">
+        <i class="fas fa-phone-alt text-danger me-2"></i>Teléfonos
+      </h3>
+
+      <p><i class="fas fa-phone text-danger me-2"></i><strong>+54 9 261 769 1377</strong> 
+        <span class="text-muted">(Ambas bases)</span>
+      </p>
+      <p><i class="fas fa-phone text-danger me-2"></i><strong>+54 9 261 588 0495</strong> 
+        <span class="text-muted">(Base Maipú)</span>
+      </p>
+      <p><i class="fas fa-phone text-danger me-2"></i><strong>+54 9 261 515 7013</strong> 
+        <span class="text-muted">(Base Luján)</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Bloque Email y WhatsApp -->
+  <div class="text-center mt-5 p-4 bg-light rounded shadow-sm" data-aos="fade-up">
+    <h4 class="fw-bold mb-3"><i class="fas fa-envelope text-danger me-2"></i>Contactanos</h4>
+    <p class="mb-4">Escribinos a <strong>wineandride@gmail.com</strong> o hablá con nosotros por WhatsApp.</p>
+
+    <!-- Botones -->
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
+      <a href="mailto:wineandride@gmail.com" class="btn btn-danger px-4 py-2" 
+         style="background:#9D2527; border:none; border-radius:50px;">
+        <i class="fas fa-envelope me-2"></i>Email
+      </a>
+      <a href="https://wa.me/5492617691377" target="_blank" class="btn btn-success px-4 py-2" 
+         style="border-radius:50px;">
+        <i class="fab fa-whatsapp me-2"></i>WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- AOS Script -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
+
+
+
+
+
     </section>
 
     <!-- Footer -->

@@ -3,6 +3,11 @@
         background-position: 17% center !important; /* Ajusta 30% según lo que quieras */
     }
 }
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 220px;
+  }
+}
 
 
 footer p {
@@ -82,3 +87,12 @@ html {
       margin-top: 15px;
     }
   }
+  .carousel-item img {
+    height: 600px;       /* Alto mayor, se puede ajustar */
+    width: 300px;        /* Ancho reducido */
+    object-fit: cover;   /* Mantiene la proporción */
+    border-radius: 12px; /* Bordes redondeados */
+    margin: 0 auto;      /* Centra la imagen */
+    display: block;
+  }
+  
