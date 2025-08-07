@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wine and Ride</title>
-  
+
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
   <style>
     :root {
-      --main-color: #9D2527;
+      --main-color: #9d2527;
       --secondary-color: #f8f8f8;
     }
 
+    .nosotros-section {
+      background-color: #9d2527;
+      /* Color vino */
+      color: white;
+    }
+
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: "Arial", sans-serif;
     }
 
     /* Navbar */
@@ -32,6 +40,7 @@
       font-weight: 500;
       transition: color 0.3s ease;
     }
+
     .navbar-nav .nav-link:hover {
       color: var(--main-color);
     }
@@ -45,6 +54,7 @@
       border-radius: 8px;
       transition: transform 0.3s ease, background 0.3s ease;
     }
+
     .btn-reserva:hover {
       background-color: #9c3d3d;
       transform: scale(1.05);
@@ -53,20 +63,22 @@
     /* Hero */
     #home {
       height: 100vh;
-      background: url('imgs/la-cordillera-de-los.jpg') no-repeat center center/cover;
+      background: url("imgs/la-cordillera-de-los.jpg") no-repeat center center/cover;
       position: relative;
       display: flex;
       align-items: center;
       justify-content: flex-start;
       color: white;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
     }
 
     #home::before {
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+      background: linear-gradient(to bottom,
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.6));
       z-index: 1;
     }
 
@@ -76,7 +88,7 @@
 
     #home h1 {
       font-size: 3rem;
-      font-family: 'Oooh Baby', cursive;
+      font-family: "Oooh Baby", cursive;
       animation: fadeInDown 1s ease forwards;
     }
 
@@ -99,6 +111,7 @@
       gap: 8px;
       transition: background 0.3s ease, transform 0.3s ease;
     }
+
     .btn-experiencias:hover {
       background-color: #9c3d3d;
       transform: translateX(5px);
@@ -106,8 +119,15 @@
 
     /* Animations */
     @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     /* Footer */
@@ -133,9 +153,11 @@
       #home h1 {
         font-size: 2rem;
       }
+
       #home p {
         font-size: 1rem;
       }
+
       .btn-experiencias {
         width: 100%;
         justify-content: center;
@@ -143,30 +165,104 @@
     }
   </style>
 </head>
-<body>
 
-  <!-- Header -->
-  <header class="fixed-top shadow">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="#home">
-          <img src="imgs/logowine.png" alt="Wine and Ride" height="50">
+<body>
+  <header class="bg-light fixed-top shadow-sm" style="border-bottom: 3px solid #9d2527">
+    <nav class="navbar navbar-expand-lg navbar-light container py-2">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="#home">
+        <img src="imgs/logowine.png" alt="Wine and Ride" height="55" class="me-2" />
+        <span class="fw-bold text-uppercase" style="color: #9d2527">Wine & Ride</span>
+      </a>
+
+      <!-- Toggle button -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item mx-2">
+            <a class="nav-link fw-semibold" href="#home">Inicio</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link fw-semibold" href="#actividades">Actividades</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link fw-semibold" href="#nosotros">Nosotros</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link fw-semibold" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+
+        <!-- CTA Button -->
+        <a href="#contacto" class="btn btn-reserva ms-lg-3 mt-3 mt-lg-0 px-4 py-2 fw-bold">
+          ¡Hacé tu Reserva!
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#actividades">Actividades</a></li>
-            <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-          </ul>
-          <a href="#contacto" class="btn-reserva ms-3">Hacé tu reserva</a>
-        </div>
       </div>
     </nav>
   </header>
+
+  <!-- CSS -->
+  <style>
+    /* Efecto para navbar links */
+    .navbar-nav .nav-link {
+      color: #333;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #9d2527;
+    }
+
+    .navbar-nav .nav-link::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      left: 0;
+      bottom: -4px;
+      background-color: #9d2527;
+      transition: 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover::after {
+      width: 100%;
+    }
+
+    /* Botón principal */
+    .btn-reserva {
+      background-color: #9d2527;
+      color: #fff;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(157, 37, 39, 0.3);
+    }
+
+    .btn-reserva:hover {
+      background-color: #b73537;
+      transform: scale(1.05);
+    }
+
+    /* Header en scroll */
+    header.scrolled {
+      background-color: #fff;
+      border-bottom: 3px solid #b73537;
+      transition: all 0.3s ease;
+    }
+  </style>
+
+  <!-- Script para efecto scroll -->
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector("header");
+      header.classList.toggle("scrolled", window.scrollY > 50);
+    });
+  </script>
 
   <!-- Hero -->
   <section id="home">
@@ -181,16 +277,491 @@
 
   <!-- Footer -->
   <footer class="text-center">
-    <div>Wine and Ride © | Ozamis 611 Norte, Maipú, Mendoza | Tel: +54 261 588 0495</div>
+    <div>
+      Wine and Ride © | Ozamis 611 Norte, Maipú, Mendoza | Tel: +54 261 588
+      0495
+    </div>
     <div class="mt-3">
       <a href="https://www.facebook.com/wineandride/"><i class="fab fa-facebook"></i></a>
       <a href="https://www.instagram.com/wineandride/"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.tripadvisor.com.ar/Attraction_Review-g1026496-d10076036-Reviews-Wine_and_Ride-Maipu_Province_of_Mendoza_Cuyo.html">
+      <a
+        href="https://www.tripadvisor.com.ar/Attraction_Review-g1026496-d10076036-Reviews-Wine_and_Ride-Maipu_Province_of_Mendoza_Cuyo.html">
         <i class="fab fa-tripadvisor"></i>
       </a>
     </div>
   </footer>
+<!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/5492615880495" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Chatear por WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
+
+<section id="nosotros" class="nosotros-section py-5">
+  <div class="container">
+    <!-- Título principal -->
+    <div class="text-center mb-5">
+      <h1 class="fw-bold text-white">Nosotros</h1>
+      <p class="fs-4 oooh-baby-regular fw-bold text-light">¿Quiénes somos?</p>
+    </div>
+
+    <div class="row align-items-center rounded shadow-sm p-4 bg-light" data-aos="fade-up">
+      <!-- Columna texto -->
+      <div class="col-12 col-md-6 text-dark">
+        <p class="fw-bold fs-5 mb-2">Nuestra misión</p>
+        <p>
+          En <strong>Wine and Ride</strong> nos apasiona mostrarte la esencia de
+          los <strong>caminos del vino y del olivo</strong> en Maipú y Luján.
+          Queremos que disfrutes una experiencia
+          <strong>única, ecológica y saludable</strong>, donde la naturaleza, la
+          cultura y la aventura se encuentran.
+        </p>
+
+        <!-- Lista de ventajas -->
+        <div class="mt-3">
+          <p class="fw-bold fs-5 mb-2">¿Por qué elegirnos?</p>
+          <ul class="list-unstyled">
+            <li>
+              <i class="fas fa-check-circle text-danger me-2"></i>Rutas
+              exclusivas entre viñedos
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-danger me-2"></i>Bicicletas
+              seguras y cómodas
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-danger me-2"></i>Experiencias
+              personalizadas
+            </li>
+            <li>
+              <i class="fas fa-check-circle text-danger me-2"></i>Compromiso con
+              el turismo sostenible
+            </li>
+          </ul>
+        </div>
+
+        <!-- Horarios -->
+        <div class="mt-4">
+          <p class="fw-bold fs-5 mb-2">Nuestros horarios de atención:</p>
+          <ul class="list-unstyled">
+            <li>
+              <i class="fas fa-clock text-danger me-2"></i>Lunes a Viernes: 9:00
+              - 18:00
+            </li>
+            <li>
+              <i class="fas fa-clock text-danger me-2"></i>Sábados y Domingos:
+              10:00 - 16:00
+            </li>
+          </ul>
+        </div>
+
+        <!-- Botón -->
+        <a href="#contacto" class="btn mt-4" style="
+            background: #9d2527;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 12px 24px;
+          ">
+          Contactanos <i class="fas fa-arrow-right ms-2"></i>
+        </a>
+      </div>
+
+      <!-- Columna imágenes -->
+      <div class="col-12 col-md-6 mt-4 mt-md-0">
+        <div id="nosotrosCarousel" class="carousel slide rounded shadow-sm" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Imagen 1 -->
+            <div class="carousel-item active">
+              <img src="imgs/carusel/car-nosotros1.jpg" class="d-block w-100 rounded" alt="Viñedos Mendoza" />
+            </div>
+            <!-- Imagen 2 -->
+            <div class="carousel-item">
+              <img src="imgs/carusel/car-nosotros2.jpg" class="d-block w-100 rounded" alt="Ruta del vino" />
+            </div>
+            <!-- Imagen 3 -->
+            <div class="carousel-item">
+              <img src="imgs/carusel/car-nosotros3.jpg" class="d-block w-100 rounded" alt="Paisajes de Mendoza" />
+            </div>
+          </div>
+
+          <!-- Controles -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#nosotrosCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#nosotrosCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+
+          <!-- Indicadores -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#nosotrosCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#nosotrosCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#nosotrosCarousel" data-bs-slide-to="2"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mapa debajo para ubicación -->
+    <div class="mt-5 text-white" data-aos="fade-up">
+      <p class="fw-bold fs-5 mb-3">
+        <i class="fas fa-map-marker-alt text-light me-2"></i>¿Dónde estamos?
+      </p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.061469295052!2d-68.7856969251428!3d-32.96041567363196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0cf453571a45%3A0xe314fa45bcd747f5!2sWine%20and%20Ride!5e0!3m2!1ses!2sar!4v1721234567890"
+        width="100%" height="350" style="border: 0; border-radius: 12px" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </div>
+  <div>
+    <section class="container my-5">
+      <div class="row align-items-center">
+        <!-- Video -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <div class="ratio ratio-16x9">
+            <video controls autoplay muted loop class="rounded shadow">
+              <source src="videos/winevideo.mov" type="video/mp4" />
+              Tu navegador no soporta el video.
+            </video>
+          </div>
+        </div>
+
+        <!-- Texto -->
+        <div class="col-md-6">
+          <h2 class="fw-bold mb-3">Nuestra misión</h2>
+          <p>
+            En <strong>Wine and Ride</strong> nos apasiona mostrarte la esencia
+            de los <strong>caminos del vino y del olivo</strong> en Maipú y
+            Luján. Queremos que disfrutes una experiencia
+            <strong>única, ecológica y saludable</strong>, donde la naturaleza,
+            la cultura y la aventura se encuentran.
+          </p>
+
+          <h4 class="fw-bold mt-4">¿Por qué elegirnos?</h4>
+          <ul>
+            <li>Rutas exclusivas entre viñedos</li>
+            <li>Bicicletas seguras y cómodas</li>
+            <li>Experiencias personalizadas</li>
+            <li>Compromiso con el turismo sostenible</li>
+          </ul>
+
+          <h5 class="fw-bold mt-4">Nuestros horarios de atención:</h5>
+          <p class="mb-0">Lunes a Viernes: 9:00 - 18:00</p>
+          <p>Sábados y Domingos: 10:00 - 16:00</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+<section id="contacto" class="">
+  <!-- CONTACTO Section -->
+  <section id="contacto" class="container py-5">
+    <!-- Título -->
+    <div class="text-center mb-5">
+      <h1 class="fw-bold" style="color: #9d2527">Contactanos</h1>
+      <p class="text-muted fs-4 oooh-baby-regular fw-bold">
+        ¿Listo para pedalear con nosotros?
+      </p>
+    </div>
+    <!-- Mapa debajo para ubicación -->
+    <div class="mt-5" data-aos="fade-up">
+      <p class="fw-bold fs-5 mb-3">
+        <i class="fas fa-map-marker-alt text-danger me-2"></i>¿Dónde estamos?
+      </p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.061469295052!2d-68.7856969251428!3d-32.96041567363196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0cf453571a45%3A0xe314fa45bcd747f5!2sWine%20and%20Ride!5e0!3m2!1ses!2sar!4v1721234567890"
+        width="100%" height="350" style="border: 0; border-radius: 12px" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+    <!-- Bloque Email y WhatsApp -->
+    <div class="text-center mt-5 p-4 bg-light rounded shadow-sm" data-aos="fade-up">
+      <h4 class="fw-bold mb-3">
+        <i class="fas fa-envelope text-danger me-2"></i>Contactanos
+      </h4>
+      <p class="mb-4">
+        Escribinos a <strong>wineandride@gmail.com</strong> o hablá con nosotros
+        por WhatsApp.
+      </p>
+
+      <!-- Botones -->
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="mailto:wineandride@gmail.com" class="btn btn-danger px-4 py-2"
+          style="background: #9d2527; border: none; border-radius: 50px">
+          <i class="fas fa-envelope me-2"></i>Email
+        </a>
+        <a href="https://wa.me/5492617691377" target="_blank" class="btn btn-success px-4 py-2"
+          style="border-radius: 50px">
+          <i class="fab fa-whatsapp me-2"></i>WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- Columna Sucursales -->
+      <div class="col-12 col-md-6 bg-light rounded shadow-sm p-5" data-aos="fade-right">
+        <h3 class="fw-bold mb-4">
+          <i class="fas fa-map-marker-alt text-danger me-2"></i>Sucursales
+        </h3>
+
+        <!-- Base 1 -->
+        <p class="fw-bold mb-1">Base 1:</p>
+        <p>OZAMIS 611 Norte, Gutierrez, Maipú, Mendoza.</p>
+        <p>
+          <i class="fas fa-clock text-danger me-2"></i>Horario: 10:00 a 19:00
+        </p>
+        <a href="https://maps.google.com?q=OZAMIS+611+Norte,+Gutierrez,+Maipú,+Mendoza" target="_blank"
+          class="text-danger fw-bold">Ver Mapa ></a>
+
+        <hr />
+
+        <!-- Base 2 -->
+        <p class="fw-bold mb-1">Base 2:</p>
+        <p>Bodega Vinorum, Luján de Cuyo, Mendoza.</p>
+        <p>
+          <i class="fas fa-clock text-danger me-2"></i>Horario: 10:00 a 17:00
+        </p>
+        <a href="https://maps.google.com?q=Bodega+Vinorum,+Luján+de+Cuyo,+Mendoza" target="_blank"
+          class="text-danger fw-bold">Ver Mapa ></a>
+      </div>
+
+      <!-- Columna Teléfonos -->
+      <div class="col-12 col-md-6 bg-light rounded shadow-sm p-4" data-aos="fade-left">
+        <h3 class="fw-bold mb-4">
+          <i class="fas fa-phone-alt text-danger me-2"></i>Teléfonos
+        </h3>
+
+        <p>
+          <i class="fas fa-phone text-danger me-2"></i><strong>+54 9 261 769 1377</strong>
+          <span class="text-muted">(Ambas bases)</span>
+        </p>
+        <p>
+          <i class="fas fa-phone text-danger me-2"></i><strong>+54 9 261 588 0495</strong>
+          <span class="text-muted">(Base Maipú)</span>
+        </p>
+        <p>
+          <i class="fas fa-phone text-danger me-2"></i><strong>+54 9 261 515 7013</strong>
+          <span class="text-muted">(Base Luján)</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AOS Script -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</section>
+
+<section id="contacto" class="container py-5">
+  <!-- Título -->
+  <div class="text-center mb-5">
+    <h1 class="fw-bold" style="color: #9d2527">Contactanos</h1>
+    <p class="text-muted fs-4 oooh-baby-regular fw-bold">
+      ¿Listo para pedalear con nosotros?
+    </p>
+  </div>
+
+  <!-- SUCURSALES -->
+  <div class="row g-4">
+    <!-- Base 1 -->
+    <div class="col-12 col-md-6" data-aos="fade-up">
+      <div class="bg-light rounded shadow-sm p-4 h-100 d-flex flex-column">
+        <h3 class="fw-bold mb-3">
+          <i class="fas fa-map-marker-alt text-danger me-2"></i>Base Maipú
+        </h3>
+        <p class="mb-1 fw-bold">Dirección:</p>
+        <p>OZAMIS 611 Norte, Gutierrez, Maipú, Mendoza.</p>
+        <p>
+          <i class="fas fa-clock text-danger me-2"></i>Horario: 10:00 a 19:00
+        </p>
+        <div class="rounded overflow-hidden mb-3">
+          <iframe src="https://maps.google.com/maps?q=OZAMIS+611+Norte,+Gutierrez,+Maipú,+Mendoza&output=embed"
+            width="100%" height="250" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <a href="https://maps.google.com?q=OZAMIS+611+Norte,+Gutierrez,+Maipú,+Mendoza" target="_blank"
+          class="text-danger fw-bold">
+          <i class="fas fa-map me-1"></i>Ver en Google Maps
+        </a>
+      </div>
+    </div>
+
+    <!-- Base 2 -->
+    <div class="col-12 col-md-6" data-aos="fade-up">
+      <div class="bg-light rounded shadow-sm p-4 h-100 d-flex flex-column">
+        <h3 class="fw-bold mb-3">
+          <i class="fas fa-map-marker-alt text-danger me-2"></i>Base Luján
+        </h3>
+        <p class="mb-1 fw-bold">Dirección:</p>
+        <p>Bodega Vinorum, Luján de Cuyo, Mendoza.</p>
+        <p>
+          <i class="fas fa-clock text-danger me-2"></i>Horario: 10:00 a 17:00
+        </p>
+        <div class="rounded overflow-hidden mb-3">
+          <iframe src="https://maps.google.com/maps?q=Bodega+Vinorum,+Luján+de+Cuyo,+Mendoza&output=embed" width="100%"
+            height="250" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <a href="https://maps.google.com?q=Bodega+Vinorum,+Luján+de+Cuyo,+Mendoza" target="_blank"
+          class="text-danger fw-bold">
+          <i class="fas fa-map me-1"></i>Ver en Google Maps
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACTO DIRECTO -->
+  <div class="bg-light rounded shadow-sm p-5 mt-5" data-aos="fade-up">
+    <div class="text-center">
+      <h3 class="fw-bold mb-3">
+        <i class="fas fa-envelope text-danger me-2"></i>Contacto directo
+      </h3>
+      <p class="mb-4">
+        ¿Querés reservar tu próxima aventura en bicicleta? Escribinos a
+        <strong>wineandride@gmail.com</strong> o chateá directo por WhatsApp.
+        También podés llamarnos a cualquiera de nuestras bases.
+      </p>
+
+      <!-- Íconos redondos -->
+      <div class="d-flex justify-content-center gap-3 flex-wrap mb-4">
+        <a href="mailto:wineandride@gmail.com" class="btn btn-danger d-flex align-items-center justify-content-center"
+          style="
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #9d2527;
+          ">
+          <i class="fas fa-envelope fa-2x text-white"></i>
+        </a>
+        <a href="https://wa.me/5492617691377" target="_blank"
+          class="btn btn-success d-flex align-items-center justify-content-center"
+          style="width: 60px; height: 60px; border-radius: 50%">
+          <i class="fab fa-whatsapp fa-2x text-white"></i>
+        </a>
+      </div>
+
+      <!-- Teléfonos -->
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <p>
+            <i class="fas fa-phone text-danger me-2"></i>
+            <strong>+54 9 261 769 1377</strong>
+            <span class="text-muted">(Ambas bases)</span>
+          </p>
+          <p>
+            <i class="fas fa-phone text-danger me-2"></i>
+            <strong>+54 9 261 588 0495</strong>
+            <span class="text-muted">(Base Maipú)</span>
+          </p>
+          <p>
+            <i class="fas fa-phone text-danger me-2"></i>
+            <strong>+54 9 261 515 7013</strong>
+            <span class="text-muted">(Base Luján)</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cierre emocional -->
+  <p class="text-center text-muted mt-5">
+    Te esperamos para vivir una experiencia inolvidable entre vinos, naturaleza
+    y aventura.
+  </p>
+</section>
+
+<section class="container py-5">
+  <div class="text-center mb-4">
+    <h2 class="fw-bold" style="color: #9d2527">Reconocimientos</h2>
+    <p class="text-muted">
+      Wine and Ride Maipú ha sido premiado por su excelencia en enoturismo
+    </p>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <ul class="list-group list-group-flush fs-5">
+        <li class="list-group-item">
+          🥇 <strong>Oro 2024</strong> — Best Of Wine Tourism
+        </li>
+        <li class="list-group-item">🥉 <strong>Bronce 2023</strong></li>
+        <li class="list-group-item">🥈 <strong>Plata 2022</strong></li>
+        <li class="list-group-item">🥉 <strong>Bronce 2021</strong></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="container-fluid my-2 mx-0">
+  <!-- Título principal -->
+  <div class="text-center p-2 m-2">
+    <h1 class="fw-bold m-2" style="color: #9d2527" data-aos="fade-left">
+      Reconocimientos
+    </h1>
+  </div>
+  <div class="row align-items-center p-4" style="
+          background-color: #fff;
+          
+        ">
+
+    <!-- Texto -->
+    <div class="col-md-6">
+
+      <p class="text-black text-center">
+        <strong>Wine and Ride</strong> ha sido reconocido a nivel internacional por su compromiso con la calidad, la innovación y
+        la experiencia del visitante en el ámbito del enoturismo.
+        A lo largo de los años, ha sido distinguido por el prestigioso programa <strong>Best Of Wine Tourism</strong>, que premia a las
+        mejores experiencias turísticas vinculadas al mundo del vino.
+      </p>
+
+      <h4 class="fw-bold mb-3 text-black text-center">
+        Premios obtenidos:
+      </h4>
+      <ul class="list-unstyled text-center" style="color: #9d2527;">
+        <li class="fw-bold">🥇 Oro 2024 — Best Of Wine Tourism</li>
+        <li class="fw-bold">🥉 Bronce 2023 — Best Of Wine Tourism</li>
+        <li class="fw-bold">🥈 Plata 2022 — Best Of Wine Tourism</li>
+        <li class="fw-bold">🥉 Bronce 2021 — Best Of Wine Tourism</li>
+        </ul>
+        <p>
+
+        </p>
+      <p class="text-back text-center">
+        Cada reconocimiento es el reflejo del esfuerzo por brindar experiencias únicas, sostenibles y
+        memorables en los caminos del vino y del olivo mendocinos.
+      </p>
+      <!-- Botón -->
+      <div class="text-center">
+        <a href="#contacto" class="btn btn-danger mt-3 dynamic-button text-dark" style="
+              background: #f5f3f2;
+              border: none;
+              border-radius: 50px;
+              padding: 12px 24px;
+            ">
+          Sumate a la aventura <i class="fas fa-arrow-right ms-2"></i>
+        </a>
+      </div>
+
+    </div>
+    <div class="col-md-6 mb-4 mb-md-0 my-2 d-flex justify-content-center align-items-center">
+      <img src="imgs/reconocimientos.jpg" class="img-fluid rounded shadow-sm" alt="Reconocimientos"
+        style="max-width: 100%; height: auto;">
+    </div>
+
+  </div>
+  </div>
+</section>
