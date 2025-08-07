@@ -153,3 +153,16 @@ html {
 body {
   overflow-x: hidden;
 }
+.hero-section {
+  height: 100vh;
+  background: url("imgs/index-foto-principal.jpeg") no-repeat center center /
+    cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    background-position: right center; /* Desplaza el foco hacia la derecha en mobile */
+  }
+}
